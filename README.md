@@ -95,11 +95,13 @@ This is the **MASON simulation interface**. To begin and control the simulation:
 
 Click on the **“Model”** tab (top right) to configure simulation parameters like:
 
-* Infection radius
-* Mask effectiveness
-* Social distancing % and effectiveness
-* Number of agents
-* Weights affecting behavior (e.g., awareness, mocking cost)
+- Infection radius
+- Mask effectiveness
+- Social distancing % and effectiveness
+- Number of agents
+- Weights affecting behavior (e.g., awareness, mocking cost)
+
+> **Note:** Variables that begin with `perc_` represent percentages (e.g., `perc_ForcedToWearMask = 10.0` means 10% of agents).
 
 Here’s what the configuration panel looks like:
 
