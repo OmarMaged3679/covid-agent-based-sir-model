@@ -268,7 +268,7 @@ public class Model extends SimState {
             agentArr.get(i).id = i;
         
         
-        //FIX THISS -- Should I add this to the Game Class?
+        //Using this in the Game Class would be interesting
         double agentsToWearMask = (percForcedToWearMask / 100.0) * (double) numAgents;
         
         //To set a percentage of the population to wear masks
