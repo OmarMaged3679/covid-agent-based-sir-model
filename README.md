@@ -2,6 +2,14 @@
 
 > **A Java-based agent simulation of COVID-style disease spread and mask/social behavior using the SIR model.**
 
+![Simulation Demo](screenshots/sim-demo.gif)
+
+> **Agent Colors**  
+> 🟦 Blue – Susceptible  
+> 🔵 Dark Blue – Susceptible and wearing a mask  
+> 🔴 Red – Infected  
+> 🟩 Green – Recovered
+
 This project simulates the spread of an infectious disease using the classic SIR (Susceptible-Infected-Recovered) model, extended with agent-based modeling techniques. It's built in Java using the [MASON](https://cs.gmu.edu/~eclab/projects/mason/) multi-agent simulation toolkit.
 
 Agents represent individuals in a population who may become infected, recover, and change behavior (e.g., mask-wearing or social distancing) based on awareness, utility, and peer influence.
@@ -38,9 +46,11 @@ This simulation builds on the SIR model using **agent-based modeling (ABM)** to 
 - Graphical simulation interface using MASON GUI
 - Daily statistics tracking (infected, recovered, masked, etc.)
 
+
+
 ---
 
-## 📂 How to Open This Project in NetBeans
+## 📂 How to Open and Run the Project in NetBeans
 
 1. **Download or clone this repository**  
    - Click the green **"Code"** button > **Download ZIP**, then extract it  
@@ -74,37 +84,38 @@ This simulation builds on the SIR model using **agent-based modeling (ABM)** to 
 
 ---
 
-## 🚀 Run the App Without NetBeans (with Pre-built JAR)
+## 🚀 Run Without NetBeans (Using the JAR File)
 
-You can also run the simulation using the provided [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar).
+You can also run the simulation using the pre-built [`COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar) located in the `dist/` folder.
 
 ### 🔧 Prerequisites
 
 - Java SE Development Kit 8 or newer  
   👉 [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-### ▶ Download & Run
-
+### ▶ How to Download & Run
 
 1. Navigate to [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar) in this repository.
 
 2. On the file page:
    - Click the **"Download"** button (top-right), **or**
-   - Right-click the "Raw" button > **Save link as...** to save the JAR file to your computer
+   - Right-click the **Raw** button and choose **"Save link as..."** to download it manually
 
-3. Then open a terminal or command prompt and run:
+3. Open a terminal or command prompt and run:
 
     ```bash
     java -jar COVID-SIR-Model.jar
     ```
 
-You’ll see a window like this:
+Once the application launches, you'll see a window like this:
 
-| Display Window | Parameter Settings Window |
+| Simulation Display | Parameter Settings |
 |----------------|--------------------|
 | ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/settings.png) |
 
-This is the **MASON simulation interface**. To begin and control the simulation:
+This is the **MASON simulation interface**, where you can view the simulation in real time and adjust parameters.
+
+To control the simulation, use the buttons in the lower-left corner:
 
 * ▶️ **Play** to start
 * ⏸️ **Pause** to temporarily stop
