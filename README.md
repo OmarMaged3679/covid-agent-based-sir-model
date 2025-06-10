@@ -12,7 +12,7 @@ Agents represent individuals in a population who may become infected, recover, a
 - Agents have heterogeneous immunity, awareness, and decision-making
 - Mask-wearing and social distancing are dynamically adopted
 - Infection probability and recovery are immunity-dependent
-- Customizable parameters for:
+- Customizable parameters for like:
   - Infection radius
   - Mask effectiveness
   - Social distancing effectiveness
@@ -22,42 +22,72 @@ Agents represent individuals in a population who may become infected, recover, a
 
 ---
 
-## 📸 Screenshots
+## 📂 How to Open This Project in NetBeans
 
-| Initial Launch | Parameter Settings |
-|----------------|--------------------|
-| ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/settings.png) |
+1. **Download or clone this repository**  
+   - Click the green **"Code"** button > **Download ZIP**, then extract it  
+   - Or use Git:  
+     ```bash
+     git clone https://github.com/OmarMaged3679/covid-agent-based-sir-model.git
+     ```
+
+2. **Open NetBeans IDE**
+
+3. Go to **File > Open Project**
+
+4. Navigate to the extracted `covid-agent-based-sir-model/` folder and open it.
+
+5. **Add required libraries** (if needed):  
+   - Right-click the project > **Properties** > **Libraries**.
+   - Under the **Compile** tab, click **Add JAR/Folder...**.
+   - Add all `.jar` files from the [`libraries`](./libraries/) folder:
+
+     * `mason.21.jar`
+     * `jfreechart-1.0.17.jar`
+     * `jcommon-1.0.21.jar`
+     * `itext-1.2.jar`
+     * `bsh-2.0b4.jar`
+     * `jmf.jar`
+     * `portfolio.jar`
+
+6. **Run from Source**:
+
+    Run `ModelWithUI.java` to launch the GUI
 
 ---
 
-## 📦 Run with Pre-built JAR
+## 🚀 Run the App Without NetBeans (with Pre-built JAR)
 
-If you already have the **Java SE Development Kit (JDK)** installed, you can run the simulation using the provided `COVID-SIR-Model.jar`.
+You can also run the simulation using the provided [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar).
 
 ### 🔧 Prerequisites
 
 - Java SE Development Kit 8 or newer  
   👉 [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
 
-### ▶️ How to Run
+### ▶ Download & Run
 
-From your terminal or command prompt:
+1. Go to [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar)  
+   *(Click the link to download the file)*
 
-```bash
-java -jar COVID-SIR-Model.jar
-````
+2. Open a terminal or command prompt and run:
+
+   ```bash
+   java -jar COVID-SIR-Model.jar
+   ```
+
 
 You’ll see a window like this:
 
-![Initial Launch](screenshots/initial-launch.png)
+| Display Window | Parameter Settings Window |
+|----------------|--------------------|
+| ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/settings.png) |
 
 This is the **MASON simulation interface**. To begin and control the simulation:
 
 * ▶️ **Play** to start
 * ⏸️ **Pause** to temporarily stop
 * ⏹️ **Stop** to reset
-
-These buttons are located at the **bottom-left** of the main window.
 
 ---
 
@@ -113,52 +143,6 @@ You can capture screenshots or record data at intervals for further analysis.
 
 ---
 
-## 🛠 Development Setup (NetBeans)
-
-### 1. Open in NetBeans
-
-1. Open NetBeans.
-2. Go to **File > Open Project**.
-3. Select the folder containing `nbproject/`.
-
-### 2. Add Required Libraries
-
-1. Right-click the project > **Properties** > **Libraries**.
-2. Under the **Compile** tab, click **Add JAR/Folder...**.
-3. Add all `.jar` files from the `lib/` directory:
-
-   * `mason.21.jar`
-   * `jfreechart-1.0.17.jar`
-   * `jcommon-1.0.21.jar`
-   * `itext-1.2.jar`
-   * `bsh-2.0b4.jar`
-   * `jmf.jar`
-   * `portfolio.jar`
-
-### 3. Run from Source
-
-Run `ModelWithUI.java` to launch the GUI:
-
-```java
-public static void main(String[] args) {
-    Console c = new Console(new ModelWithUI());
-    c.setVisible(true);
-}
-```
-
----
-
-## 🧪 Parameters You Can Tune
-
-* `numAgents`: Number of agents
-* `maskEffectiveness`: How effective masks are
-* `percForcedToWearMask`: % of agents forced to wear masks
-* `percSocialDistancing`: % of agents practicing social distancing
-* `infectionRadius`: Range at which infection can spread
-* `stepsToStartNewInfection`: When the first infection wave begins
-
----
-
 ## 📚 Technologies Used
 
 * **Java 8+**
@@ -168,6 +152,13 @@ public static void main(String[] args) {
 
 ---
 
-## 👤 Author
+## ✍️ Author
 
 This project was developed as part of a simulation-based exploration of infectious disease dynamics using agent-based modeling.
+* 💻 Project by: *Omar Maged*
+
+---
+
+## 📜 License
+
+Licensed under the MIT License.
