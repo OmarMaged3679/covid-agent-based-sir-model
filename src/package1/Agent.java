@@ -267,7 +267,7 @@ public class Agent implements Steppable{
         //Calculate the utility of wearing a mask
         //k1, k2, k3, and k4 are constants that can be adjusted to reflect the importance of each factor in determining the utility,
         //this can be done by defining the constants in the Model class
-        //Fix the k values?
+        //Can improve the k values even better
         //double k1 = 1.8, k2 = 1, k3 = 0.7, k4 = 1.1;
         
         utility = (k1 * infectionRate)
