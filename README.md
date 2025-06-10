@@ -26,7 +26,7 @@ Agents represent individuals in a population who may become infected, recover, a
 
 | Initial Launch | Parameter Settings |
 |----------------|--------------------|
-| ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/model-settings.png) |
+| ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/settings.png) |
 
 ---
 
