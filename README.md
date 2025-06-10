@@ -28,13 +28,11 @@ Agents represent individuals in a population who may become infected, recover, a
 |----------------|--------------------|
 | ![Initial UI](screenshots/initial-launch.png) | ![Model Settings](screenshots/model-settings.png) |
 
-> ℹ️ Place your screenshots in a `screenshots/` folder in the project root.
-
 ---
 
 ## 📦 Run with Pre-built JAR
 
-If you already have the **Java SE Development Kit (JDK)** installed, you can run the simulation using the provided `SIR-Model.jar`.
+If you already have the **Java SE Development Kit (JDK)** installed, you can run the simulation using the provided `COVID-SIR-Model.jar`.
 
 ### 🔧 Prerequisites
 
@@ -46,7 +44,7 @@ If you already have the **Java SE Development Kit (JDK)** installed, you can run
 From your terminal or command prompt:
 
 ```bash
-java -jar SIR-Model.jar
+java -jar COVID-SIR-Model.jar
 ````
 
 You’ll see a window like this:
