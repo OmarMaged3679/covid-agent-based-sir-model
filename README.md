@@ -1,8 +1,26 @@
 # COVID-Inspired Agent-Based SIR Model Simulation
 
-This project is an agent-based simulation of the SIR (Susceptible-Infected-Recovered) epidemiological model, developed in Java using the [MASON](https://cs.gmu.edu/~eclab/projects/mason/) multi-agent simulation toolkit.
+> **A Java-based agent simulation of COVID-style disease spread and mask/social behavior using the SIR model.**
+
+This project simulates the spread of an infectious disease using the classic SIR (Susceptible-Infected-Recovered) model, extended with agent-based modeling techniques. It's built in Java using the [MASON](https://cs.gmu.edu/~eclab/projects/mason/) multi-agent simulation toolkit.
 
 Agents represent individuals in a population who may become infected, recover, and change behavior (e.g., mask-wearing or social distancing) based on awareness, utility, and peer influence.
+
+---
+
+## 🧪 What Is the SIR Model?
+
+The **SIR model** is a classic epidemiological framework used to simulate how infectious diseases spread through a population over time. It divides the population into three groups:
+
+- **S**usceptible: Individuals who can catch the disease
+- **I**nfected: Individuals who currently have the disease and can spread it
+- **R**ecovered: Individuals who have recovered (or been removed) and are no longer infectious
+
+This simulation builds on the SIR model using **agent-based modeling (ABM)** to add realistic behaviors such as:
+
+- Mask-wearing decisions
+- Social distancing
+- Varying immunity and awareness levels
 
 ---
 
@@ -12,7 +30,7 @@ Agents represent individuals in a population who may become infected, recover, a
 - Agents have heterogeneous immunity, awareness, and decision-making
 - Mask-wearing and social distancing are dynamically adopted
 - Infection probability and recovery are immunity-dependent
-- Customizable parameters for like:
+- Customizable parameters such as:
   - Infection radius
   - Mask effectiveness
   - Social distancing effectiveness
@@ -67,15 +85,18 @@ You can also run the simulation using the provided [`dist/COVID-SIR-Model.jar`](
 
 ### ▶ Download & Run
 
-1. Go to [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar)  
-   *(Click the link to download the file)*
 
-2. Open a terminal or command prompt and run:
+1. Navigate to [`dist/COVID-SIR-Model.jar`](./dist/COVID-SIR-Model.jar) in this repository.
 
-   ```bash
-   java -jar COVID-SIR-Model.jar
-   ```
+2. On the file page:
+   - Click the **"Download"** button (top-right), **or**
+   - Right-click the "Raw" button > **Save link as...** to save the JAR file to your computer
 
+3. Then open a terminal or command prompt and run:
+
+    ```bash
+    java -jar COVID-SIR-Model.jar
+    ```
 
 You’ll see a window like this:
 
