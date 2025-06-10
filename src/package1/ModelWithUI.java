@@ -33,8 +33,6 @@ public class ModelWithUI extends GUIState{
         return "Agents Yard";
     }
     
-    
-    //NEW CODE
     public Object getSimulationInspectedObject() { return state; }
     //public Object getSimulationInspectedObject2() { return state; }
     
@@ -44,8 +42,6 @@ public class ModelWithUI extends GUIState{
         i.setVolatile(true);
         return i;
     }
-    //END OF NEW CODE
-    
     
     public void start() {
         super.start();
